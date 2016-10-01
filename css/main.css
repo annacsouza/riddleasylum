@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* seletor simples */
+html { background-color: lightgray; }
+
+/* seletor simples com duas propriedades */
+body {
+	background-color: white;
+	font-size-adjust: 100%;
+}
+
+/* seletor agrupado */
+header, nav, article, aside, footer {
+	margin: 20px;
+	background-color: lightblue;
+}
+
+/* este seletor aplica 60px em cima e embaixo e 20px dos lados*/
+/* nav { margin: 60px 20px; } */
+
+/* este seletor aplica a margem em sentido horário */
+/* topo, direita, base, esquerda */
+/* nav { margin: 10px 50px 80px 100px; } */
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	text-align: justify;
+	padding: 10px;
+}
+
+/* PSEUDO-SELETORES */
+p:hover { background-color: orange; }
+
+/* Estilos do NAV */
+/* seletor encadeado, ou seja a propriedade é aplicada no último elemento. Nesse caso o LI dentro de um UL */
+ul.menu li { display: inline; }
+
+ul li a {
+    /* topo, direita, base, esquerda */
+	padding: 0px 10px 0px 10px;
+	color: darkblue;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.1em; 
+}
+
+ul li a:hover {
+	color: white;
+	background-color: darkblue;
+}
+
+/* Abaixo estamos referenciando uma CLASSE. As classes podem ser repetidas em diversos elementos no HTML */
+
+.nome-discreto {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: .8em;
+    text-align: left;
+    color: gray;
+}
+
+.nome-discreto:hover { color:red; }
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 { 
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+/* Ajustar o posicionamento */
+body {
+    width: 980px;
+    /* top, righ, bottom, left */
+    margin: 0px auto 0px auto;  /* Zera o espaço no topo e base (0px) e "auto" para esquerda e direita. */
+}
+article {
+    width: 570px;
+    margin-top: 0;
+    float: left;
+}
+aside {
+    width: 350px;
+    float:left;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+footer {
+/*    background-color: red;*/
+    clear: both;
+}
