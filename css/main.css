@@ -12,7 +12,7 @@ body {
 /* seletor agrupado */
 header, nav, article, aside, footer {
 	margin: 20px;
-	background-color: lightblue;
+	background-color: white;
 }
 
 /* este seletor aplica 60px em cima e embaixo e 20px dos lados*/
@@ -30,7 +30,7 @@ p {
 }
 
 /* PSEUDO-SELETORES */
-p:hover { background-color: orange; }
+p:hover { background-color: blue; }
 
 /* Estilos do NAV */
 /* seletor encadeado, ou seja a propriedade é aplicada no último elemento. Nesse caso o LI dentro de um UL */
