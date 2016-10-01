@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 /* seletor simples */
-html { background-color: lightgray; }
+html { background-color: solidwhite; }
 
 /* seletor simples com duas propriedades */
 body {
-	background-color: white;
+	background-color: solidwhite;
 	font-size-adjust: 100%;
 }
 
 /* seletor agrupado */
 header, nav, article, aside, footer {
 	margin: 20px;
-	background-color: white;
+	background-color: solidwhite;
 }
 
 /* este seletor aplica 60px em cima e embaixo e 20px dos lados*/
@@ -30,7 +30,7 @@ p {
 }
 
 /* PSEUDO-SELETORES */
-p:hover { background-color: blue; }
+p:hover { background-color: solidblue; }
 
 /* Estilos do NAV */
 /* seletor encadeado, ou seja a propriedade é aplicada no último elemento. Nesse caso o LI dentro de um UL */
